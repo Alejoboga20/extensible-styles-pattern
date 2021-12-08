@@ -19,6 +19,6 @@ export const ProductCard = ({ children, product, className }: ProductCardProps) 
 
 export interface ProductCardProps {
 	children?: ReactElement | ReactElement[];
-	product: Product;
 	className?: string;
+	product: Product;
 }
