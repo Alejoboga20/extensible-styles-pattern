@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { ProductContext } from './ProductCard';
 import styles from '../styles/styles.module.css';
 
-export const ProductButtons = ({ className }: { className?: string }) => {
+export const ProductButtons = ({ className }: ProductButtonsProps) => {
 	const { counter, increaseBy } = useContext(ProductContext);
 
 	return (
@@ -19,3 +19,7 @@ export const ProductButtons = ({ className }: { className?: string }) => {
 		</div>
 	);
 };
+
+export interface ProductButtonsProps {
+	className?: string;
+}

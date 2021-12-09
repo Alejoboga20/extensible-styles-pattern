@@ -19,7 +19,7 @@ export const ProductImage = ({ img = '', className }: ProductImageProps) => {
 	return <img className={`${styles.productImg} ${className}`} src={imgToShow} alt='Product' />;
 };
 
-interface ProductImageProps {
+export interface ProductImageProps {
 	className?: string;
 	img?: string;
 }

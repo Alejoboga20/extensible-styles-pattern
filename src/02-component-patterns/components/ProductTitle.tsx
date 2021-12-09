@@ -12,7 +12,7 @@ export const ProductTitle = ({ title, className }: ProductTitleProps) => {
 	);
 };
 
-interface ProductTitleProps {
+export interface ProductTitleProps {
 	className?: string;
 	title?: string;
 }
